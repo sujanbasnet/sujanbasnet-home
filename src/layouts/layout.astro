@@ -1,0 +1,29 @@
+---
+import '../styles/global.css'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sujan Basnet - Full Stack Developer" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="/" class="logo">Sujan Basnet</a>
+				<div class="nav-links">
+					<a href="#about">About</a>
+					<a href="#skills">Skills</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="#experience">Experience</a>
+					<a href="#contact" class="cta-button">Get in Touch</a>
+				</div>
+			</nav>
+		</header>
+		<slot />
+	</body>
+</html>

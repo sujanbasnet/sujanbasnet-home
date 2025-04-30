@@ -1,16 +1,441 @@
 ---
-
+import Layout from '../layouts/layout.astro'
+import '../styles/index.css'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+<main class="container">
+	<section class="about" id="about">
+		<div class="section-header">
+			<h3>About Me</h3>
+			<div class="divider"></div>
+		</div>
+		<div >
+			<div class="about-text">
+				<p>
+					I'm a full-stack developer with 10 years of experience, specializing in front-end development—particularly with React. 
+					I've built customized web applications for a variety of clients and use cases, both independently and as part of a team. 
+					I enjoy diving into new technologies and love exploring what's possible in modern web development. 
+					I'm comfortable hitting the ground running and adapting quickly to new challenges.
+				</p>
+			</div>
+			<div class="about-highlights">
+				<div class="highlight-card">
+					<div class="highlight-icon">📈</div>
+					<h4>Career Summary</h4>
+					<ul>
+						<li>10+ years of full-stack development experience</li>
+						<li>Built scalable applications serving 100K+ users</li>
+						<li>Successfully launched multi purpose websites and applications</li>
+						<li>Led teams and mentored developers</li>
+						<li>Consistently delivered high-performance solutions</li>
+					</ul>
+				</div>
+				<div class="highlight-card">
+					<div class="highlight-icon">💡</div>
+					<h4>Key Strengths</h4>
+					<ul>
+						<li>Strong problem-solving and analytical skills</li>
+						<li>Excellent communication and collaboration</li>
+						<li>Quick learner and technology enthusiast</li>
+						<li>Experience in mentoring and team work</li>
+					</ul>
+				</div>
+				<div class="highlight-card">
+					<div class="highlight-icon">🚀</div>
+					<h4>Recent Achievements</h4>
+					<ul>
+						<li>Built a multi purpose website: e-commerce, blog, and marketing website.</li>
+						<li>Built a social media platform with games and chat.</li>
+						<li>Improved CI/CD for better developer experience.</li>
+						<li>Helped change the server infrastructure (Host modern frontend application on AWS).</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="skills" id="skills">
+		<div class="section-header">
+			<h3>Technical Skills</h3>
+			<div class="divider"></div>
+		</div>
+		<div class="skills-grid">
+			<div class="skill-category">
+				<h4>Frontend</h4>
+				<ul>
+					<li>TypeScript / JavaScript (ES6)</li>
+					<li>React JS</li>
+					<li>Next JS (Comfortable with other modern frontend frameworks as well)</li>
+					<li>WebRTC (Web Realtime communication)</li>
+					<li>Socket.io</li>
+					<li>CSS, TailwindCSS</li>
+					<li>GraphQL, REST API</li>
+				</ul>
+			</div>
+			<div class="skill-category">
+				<h4>Backend</h4>
+				<ul>
+					<li>Node JS</li>
+					<li>Java</li>
+					<li>PHP</li>
+					<li>AWS</li>
+					<li>REST API</li>
+				</ul>
+			</div>
+			<div class="skill-category">
+				<h4>Infrastructure</h4>
+				<ul>
+					<li>AWS</li>
+					<li>SST (Serverless Stack)</li>
+					<li>Github Actions</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio" id="portfolio">
+		<div class="section-header">
+			<h3>Portfolio Projects</h3>
+			<div class="divider"></div>
+		</div>
+		
+		<div class="portfolio-grid">
+			<div class="project cabinet">
+				<div class="project-content">
+					<div class="project-header">
+						<h4>Cabinet Health (Multi purpose web application)</h4>
+						<div class="project-meta">
+							<span class="tech">React, Next.js, Shopify</span>
+							<a href="https://cabinethealth.com" class="project-link" target="_blank">Live Site</a>
+						</div>
+					</div>
+					<div class="project-stats">
+						<div class="stat">
+							<span class="stat-number">100K+</span>
+							<span class="stat-label">Monthly Users</span>
+						</div>
+					</div>
+					<div class="project-achievements">
+						<h5>Key Contributions</h5>
+						<ul>
+							<li>Built e-commerce storefront on top of Shipify.</li>
+							<li>Implemented prescription medication ordering system which included transfer and refill experiences.</li>
+							<li>Built a blogs section in the website that was fed blogs from a CMS.</li>
+							<li>Built a system for marketing/landing pages where new pages could be created using the CMS.</li>
+							<li>Migrated the frontend infrastructure from Terraform to SST (Serverless Stack) on AWS.</li>
+							<li>Monitored and improved site performace on a regular basis.</li>
+							<li><b>Much more .. </b></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="project-content">
+					<div class="project-header">
+						<h4>DiGii Social (Web Application)</h4>
+						<div class="project-meta">
+							<span class="tech">React, WebSocket, Node.js</span>
+						</div>
+					</div>
+					<div class="project-stats">
+						<div class="stat">
+							<span class="stat-number">50K+</span>
+							<span class="stat-label">Active Users</span>
+						</div>
+					</div>
+					<div class="project-achievements">
+						<h5>Key Contributions</h5>
+						<ul>
+							<li>Created a social media feed.</li>
+							<li>Implemented simple multiplayer games and chat using WebSockets.</li>
+							<li>Created standalone feature packages to improve maintainability and reusability.</li>
+							<li>Developed reusable components including video players, tables, forms and modals</li>
+							<li>Developed three different web apps for different users. (Different users had different portals)</li>
+							<li><b>Much more .. </b></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="project-header">
+					<h4>Somersault (Website)</h4>
+					<div class="project-meta">
+						<span class="tech">HMTL, CSS</span>
+						<a href="https://www.somersault.one/" class="project-link" target="_blank">Live Site</a>
+					</div>
+				</div>
+				<ul>
+					<li>Built responsive multipage website with custom podcast player.</li>
+					<li>Implemented pixel-perfect design from provided mockups</li>
+				</ul>
+			</div>
+
+			<div class="project">
+				<div class="project-header">
+					<h4>Bremer Advokater (Website)</h4>
+					<div class="project-meta">
+						<span class="tech">HTML, CSS</span>
+						<a href="https://bremeradvokater.dk/" class="project-link" target="_blank">Live Site</a>
+					</div>
+				</div>
+				<ul>
+					<li>Developed fully responsive multi page website.</li>
+					<li>Implemented pixel perfect website from provided mockups.</li>
+				</ul>
+			</div>
+
+			<div class="project">
+				<div class="project-header">
+					<h4>Kimbu Tech (Website)</h4>
+					<div class="project-meta">
+						<span class="tech">React, CSS, Node JS</span>
+						<a href="https://kimubtech.com/" class="project-link" target="_blank">Live Site</a>
+					</div>
+				</div>
+				<ul>
+					<li>Developed fully responsive website.</li>
+					<li>Created mockups in Figma.</li>
+					<li>Hosted website in Digital Ocean.</li>
+				</ul>
+			</div>
+
+			<div class="project">
+				<div class="project-header">
+					<h4>Ipay Remit (Website)</h4>
+					<div class="project-meta">
+						<span class="tech">HTML, jQuery, CSS, Sass</span>
+						<a href="https://ipayremittal.com/ipay/" class="project-link" target="_blank">Live Site</a>
+					</div>
+				</div>
+				<ul>
+					<li>Developed fully responsive website.</li>
+					<li>Worked with the leadership to come up with design ideas for the website.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="experience" id="experience">
+		<div class="section-header">
+			<h3>Professional Experience</h3>
+			<div class="divider"></div>
+		</div>
+
+		<div class="timeline">
+			<div class="job">
+				<div class="job-header">
+					<h4>Senior Frontend Engineer (Toptal Freelancer)</h4>
+					<div class="job-meta">
+						<span class="company">Toptal</span>
+						<span class="duration">2020 - Present</span>
+					</div>
+				</div>
+				<div class="job-achievements">
+					<div class="achievement">
+						Toptal is an exclusive network of the top freelance software developers and many other professionals in the world. My recent work engagement has been via Toptal's network. They have a strict vetting process to ensure the quality of the professionals in their network.
+						Toptal label their professionals as <a href="https://www.toptal.com/top-3-percent" target="_blank">Top 3%</a>.
+
+						<a href="https://www.toptal.com/resume/sujan-basnet" target="_blank">Here's my profile in Toptal</a>
+
+						<h5></h5>
+						<ul>
+							<li>Joined Toptal in 2020.</li>
+							<li>Actively engaged with client immidately after joining.</li>
+						</ul>
+					</div>
+					<div class="job-metrics">
+						<div class="metric">
+							<span class="metric-number">15+</span>
+							<span class="metric-label">Client Projects</span>
+						</div>
+						<div class="metric">
+							<span class="metric-number">45%</span>
+							<span class="metric-label">Performance Gains</span>
+						</div>
+						<div class="metric">
+							<span class="metric-number">98%</span>
+							<span class="metric-label">Client Satisfaction</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="job">
+				<div class="job-header">
+					<h4>Senior Frontend Engineer</h4>
+					<div class="job-meta">
+						<span class="company">Cabinet Health</span>
+						<span class="duration">2021 - 2025</span>
+						<span class="location">US Company, Remote</span>
+					</div>
+				</div>
+				<div class="job-achievements">
+					<div class="achievement">
+						<h5>Key Achievements</h5>
+						<ul>
+							<li>Built a new version of the entire website including home page, landing pages, blogs, product pages, collections, and account portal</li>
+							<li>Created prescriptions system with transfer and refill experiences, implementing multi-step forms and account portal integration</li>
+							<li>Developed eCommerce functionality using Shopify integration</li>
+							<li>Built modular page section system with CMS integration for content creators</li>
+							<li>Migrated front-end infrastructure from Terraform to SST on AWS</li>
+							<li>Optimized CI jobs for improved energy consumption and cost efficiency</li>
+						</ul>
+					</div>
+					<div class="job-metrics">
+						<div class="metric">
+							<span class="metric-number">100K+</span>
+							<span class="metric-label">Monthly Active Users</span>
+						</div>
+						<div class="metric">
+							<span class="metric-number">40%</span>
+							<span class="metric-label">Performance Improvement</span>
+						</div>
+						<div class="metric">
+							<span class="metric-number">$2M+</span>
+							<span class="metric-label">Annual Revenue</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="job">
+				<div class="job-header">
+					<h4>Fullstack Developer</h4>
+					<div class="job-meta">
+						<span class="company">Tekkon Technologies</span>
+						<span class="duration">2019 - 2021</span>
+						<span class="location">Nepal</span>
+					</div>
+				</div>
+				<div class="job-achievements">
+					<div class="achievement">
+						<h5>Key Achievements</h5>
+						<ul>
+							<li>Developed feature-rich chat application with group functionality, customization options, and media integration</li>
+							<li>Built real-time multiplayer games as standalone React packages</li>
+							<li>Implemented region-based content and navigation system for localized user experiences</li>
+							<li>Led a team of 5 developers in implementing new features and maintaining existing codebase</li>
+							<li>Reduced server response time by 50% through optimization and caching strategies</li>
+						</ul>
+					</div>
+					<div class="job-metrics">
+						<div class="metric">
+							<span class="metric-number">50K+</span>
+							<span class="metric-label">Daily Active Users</span>
+						</div>
+						<div class="metric">
+							<span class="metric-number">99.9%</span>
+							<span class="metric-label">System Uptime</span>
+						</div>
+						<div class="metric">
+							<span class="metric-number">5</span>
+							<span class="metric-label">Team Members</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="job">
+				<div class="job-header">
+					<h4>Fullstack Developer</h4>
+					<div class="job-meta">
+						<span class="company">Kimbu Tech</span>
+						<span class="duration">2018 - 2019</span>
+						<span class="location">Nepal</span>
+					</div>
+				</div>
+				<ul>
+					<li>Developed responsive websites and content management systems for clients</li>
+					<li>Mentored three interns to full-time positions, leading team across four projects</li>
+					<li>Managed client relationships, requirements gathering, and project reporting</li>
+					<li>Collaborated with CEO on project management and team performance</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<div class="job-header">
+					<h4>Fullstack Developer</h4>
+					<div class="job-meta">
+						<span class="company">iPay Remit</span>
+						<span class="duration">2016 - 2017</span>
+						<span class="location">Nepal</span>
+					</div>
+				</div>
+				<ul>
+					<li>Designed and developed employee operations application</li>
+					<li>Optimized processing algorithm achieving 75% performance improvement</li>
+					<li>Led frontend team while contributing to full-stack development</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<div class="job-header">
+					<h4>Fullstack Developer</h4>
+					<div class="job-meta">
+						<span class="company">Prologic Solutions</span>
+						<span class="duration">2015 - 2016</span>
+						<span class="location">Nepal</span>
+					</div>
+				</div>
+				<ul>
+					<li>Designed and developed employee operations application</li>
+					<li>Optimized processing algorithm achieving 75% performance improvement</li>
+					<li>Led frontend team while contributing to full-stack development</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="strengths" id="strengths">
+		<div class="section-header">
+			<h3>Key Strengths</h3>
+			<div class="divider"></div>
+		</div>
+		<div class="strength-items">
+			<div class="strength-item">
+				<div class="strength-icon">💬</div>
+				<h4>Effective Communication</h4>
+				<p>I understand the value of communication especially now with remote work. I believe it is equally important as the engineering part of the job.</p>
+			</div>
+			<div class="strength-item">
+				<div class="strength-icon">🚀</div>
+				<h4>Quick Learner</h4>
+				<p>I have a strong enthusiasm for learning new technologies and quickly adapting to them. I thrive on exploring new tools and frameworks, and I've consistently demonstrated the ability to pick up and apply new technologies effectively in past projects.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="section-header">
+			<h3>Get In Touch</h3>
+			<div class="divider"></div>
+		</div>
+		<div class="contact-content">
+			<p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+			<div class="social-links">
+				<a href="https://github.com/sujanbasnet" target="_blank" class="social-link">
+					<svg class="social-icon" viewBox="0 0 24 24">
+						<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+					</svg>
+					GitHub
+				</a>
+				<a href="mailto:basnetsujan1016@gmail.com" class="social-link">
+					<svg class="social-icon" viewBox="0 0 24 24">
+						<path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+					</svg>
+					Email
+				</a>
+				<a href="tel:+9779863191093" class="social-link">
+					<svg class="social-icon" viewBox="0 0 24 24">
+						<path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM21 6h-3V3h-2v3h-3v2h3v3h2V8h3z"/>
+					</svg>
+					+977 9863191093
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+</Layout>
