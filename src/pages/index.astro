@@ -99,8 +99,8 @@ import Layout from '../layouts/layout.astro'
 			<div class="w-10 h-0.5 bg-primary mx-auto"></div>
 		</div>
 		
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">Cabinet Health</h4>
@@ -130,7 +130,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">DiGii Social - Classroom</h4>
@@ -159,7 +159,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">DiGii Social - Teacher Portal</h4>
@@ -186,7 +186,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">DiGii Social - Parent Portal</h4>
@@ -212,7 +212,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">Somersault</h4>
@@ -232,7 +232,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">Bremer Advokater</h4>
@@ -252,7 +252,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">Kimbu Tech</h4>
@@ -273,7 +273,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">Skyline Architects</h4>
@@ -294,7 +294,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">Forex Japan</h4>
@@ -315,7 +315,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">Ipay Remit</h4>
@@ -337,7 +337,7 @@ import Layout from '../layouts/layout.astro'
 			</div>
 			
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6 portfolio-item">
 				<div class="flex flex-col gap-4">
 					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">IVF Nepal</h4>
@@ -356,6 +356,11 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 		</div>
+		<div class="text-center mt-8">
+			<button id="show-more-portfolio" class="text-primary underline hover:no-underline transition-colors duration-200">
+				Show More Projects
+			</button>
+		</div>
 	</section>
 
 	<section class="min-h-screen flex flex-col justify-center py-32 md:min-h-screen" id="experience">
@@ -363,9 +368,9 @@ import Layout from '../layouts/layout.astro'
 			<h3 class="text-4xl text-text mb-4 font-semibold">Professional Experience</h3>
 			<div class="w-10 h-0.5 bg-primary mx-auto"></div>
 		</div>
-		<div class="relative md:pl-8 max-w-4xl mx-auto">
+		<div class="relative md:pl-8 max-w-4xl mx-auto" id="experience-timeline">
 			<div class="absolute left-0 top-0 bottom-0 w-0.5 bg-border-color hidden md:block"></div>
-			<div class="relative mb-12 md:pl-8 last:mb-0">
+			<div class="relative mb-12 md:pl-8 last:mb-0 experience-item">
 				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
 				<div class="md:hidden text-md mb-1 text-gray-500">1/6</div>
 				<div class="mb-6">
@@ -390,7 +395,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 		
-			<div class="relative mb-12 md:pl-8 last:mb-0">
+			<div class="relative mb-12 md:pl-8 last:mb-0 experience-item">
 				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
 				<div class="md:hidden text-md mb-1 text-gray-500">2/6</div>
 				<div class="mb-6">
@@ -415,7 +420,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="relative mb-12 md:pl-8 last:mb-0">
+			<div class="relative mb-12 md:pl-8 last:mb-0 experience-item">
 				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
 				<div class="md:hidden text-md mb-1 text-gray-500">3/6</div>
 				<div class="mb-6">
@@ -439,7 +444,7 @@ import Layout from '../layouts/layout.astro'
 				</div>
 			</div>
 
-			<div class="relative mb-12 md:pl-8 last:mb-0">
+			<div class="relative mb-12 md:pl-8 last:mb-0 experience-item">
 				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
 				<div class="md:hidden text-md mb-1 text-gray-500">4/6</div>
 				<div class="mb-6">
@@ -458,7 +463,7 @@ import Layout from '../layouts/layout.astro'
 				</ul>
 			</div>
 
-			<div class="relative mb-12 md:pl-8 last:mb-0">
+			<div class="relative mb-12 md:pl-8 last:mb-0 experience-item">
 				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
 				<div class="md:hidden text-md mb-1 text-gray-500">5/6</div>
 				<div class="mb-6">
@@ -476,7 +481,7 @@ import Layout from '../layouts/layout.astro'
 				</ul>
 			</div>
 
-			<div class="relative mb-12 md:pl-8 last:mb-0">
+			<div class="relative mb-12 md:pl-8 last:mb-0 experience-item">
 				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
 				<div class="md:hidden text-md mb-1 text-gray-500">6/6</div>
 				<div class="mb-6">
@@ -493,6 +498,11 @@ import Layout from '../layouts/layout.astro'
 					<li class="mb-2">Led frontend team while contributing to full-stack development</li>
 				</ul>
 			</div>
+		</div>
+		<div class="text-center mt-8">
+			<button id="show-more-experience" class="text-primary underline hover:no-underline transition-colors duration-200">
+				Show More Experience
+			</button>
 		</div>
 	</section>
 
@@ -546,3 +556,87 @@ import Layout from '../layouts/layout.astro'
 	</section>
 </main>
 </Layout>
+
+<script>
+	// Portfolio show more functionality
+	const portfolioGrid = document.getElementById('portfolio-grid');
+	const portfolioItems = document.querySelectorAll('.portfolio-item');
+	const showMorePortfolioBtn = document.getElementById('show-more-portfolio');
+	let visiblePortfolioItems = 3;
+
+	// Experience show more functionality
+	const experienceTimeline = document.getElementById('experience-timeline');
+	const experienceItems = document.querySelectorAll('.experience-item');
+	const showMoreExperienceBtn = document.getElementById('show-more-experience');
+	let visibleExperienceItems = 3;
+
+	// Initialize visibility
+	function initializeVisibility() {
+		// Hide all portfolio items except first 3
+		portfolioItems.forEach((item, index) => {
+			if (index >= visiblePortfolioItems) {
+				(item as HTMLElement).style.display = 'none';
+			}
+		});
+
+		// Hide all experience items except first 3
+		experienceItems.forEach((item, index) => {
+			if (index >= visibleExperienceItems) {
+				(item as HTMLElement).style.display = 'none';
+			}
+		});
+
+		// Update button visibility
+		updateButtonVisibility();
+	}
+
+	// Update button visibility
+	function updateButtonVisibility() {
+		// Portfolio button
+		if (showMorePortfolioBtn) {
+			if (visiblePortfolioItems >= portfolioItems.length) {
+				showMorePortfolioBtn.style.display = 'none';
+			} else {
+				showMorePortfolioBtn.style.display = 'inline-block';
+			}
+		}
+
+		// Experience button
+		if (showMoreExperienceBtn) {
+			if (visibleExperienceItems >= experienceItems.length) {
+				showMoreExperienceBtn.style.display = 'none';
+			} else {
+				showMoreExperienceBtn.style.display = 'inline-block';
+			}
+		}
+	}
+
+	// Show more portfolio items
+	if (showMorePortfolioBtn) {
+		showMorePortfolioBtn.addEventListener('click', () => {
+			visiblePortfolioItems += 3;
+			portfolioItems.forEach((item, index) => {
+				if (index < visiblePortfolioItems) {
+					(item as HTMLElement).style.display = 'block';
+				}
+			});
+			updateButtonVisibility();
+		});
+	}
+
+	// Show more experience items
+	if (showMoreExperienceBtn) {
+		showMoreExperienceBtn.addEventListener('click', () => {
+			visibleExperienceItems += 3;
+			experienceItems.forEach((item, index) => {
+				if (index < visibleExperienceItems) {
+					(item as HTMLElement).style.display = 'block';
+				}
+			});
+			updateButtonVisibility();
+		});
+	}
+
+	// Initialize on page load
+	document.addEventListener('DOMContentLoaded', initializeVisibility);
+</script>
