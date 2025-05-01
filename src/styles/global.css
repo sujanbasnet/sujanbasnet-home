@@ -2,50 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply font-sans m-0 p-0 bg-background text-text;
-  }
-}
 
-@layer components {
-  .logo {
-    @apply text-xl font-semibold text-text no-underline;
-  }
+			:root {
+				--background: #ffffff;
+				--card-background: #f8fafc;
+				--text: #1f2937;
+				--light-text: #6b7280;
+				--primary: #34495e;
+				--border-color: #e2e8f0;
+			}
 
-  .nav-links {
-    @apply flex gap-8 items-center;
-  }
-
-  .nav-links a {
-    @apply text-text no-underline text-sm font-medium transition-colors duration-200;
-  }
-
-  .nav-links a:hover {
-    @apply text-primary;
-  }
-
-  .cta-button {
-    @apply bg-primary text-white px-4 py-2 rounded-lg transition-colors duration-200;
-  }
-
-  .cta-button:hover {
-    @apply bg-blue-700 text-white;
-  }
-}
-
-@layer utilities {
-  header {
-    @apply fixed top-0 left-0 right-0 bg-background shadow-sm z-50;
-  }
-
-  nav {
-    @apply max-w-7xl mx-auto px-8 py-4 flex justify-between items-center;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    @apply hidden;
-  }
-} 
+			.dark {
+				--background: #111827;
+				--card-background: #1f2937;
+				--text: #f3f4f6;
+				--light-text: #9ca3af;
+				--primary: #3b82f6;
+				--border-color: #374151;
+			}

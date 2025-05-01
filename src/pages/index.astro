@@ -1,13 +1,12 @@
 ---
 import Layout from '../layouts/layout.astro'
-import '../styles/index.css'
 ---
 
 <Layout>
 <main class="max-w-7xl mx-auto px-8">
-	<section class="min-h-screen flex flex-col justify-center py-32" id="about">
+	<section class="min-h-screen flex flex-col justify-center py-32 md:min-h-screen" id="about">
 		<div class="text-center mb-16">
-			<h3 class="text-4xl text-text mb-4 font-semibold">About Me</h3>
+			<h3 class="text-4xl text-text mb-4 font-semibold">Hi!</h3>
 			<div class="w-10 h-0.5 bg-primary mx-auto"></div>
 		</div>
 		<div>
@@ -55,13 +54,13 @@ import '../styles/index.css'
 		</div>
 	</section>
 
-	<section class="min-h-screen flex flex-col justify-center py-32" id="skills">
+	<section class="min-h-screen flex flex-col justify-center py-32 md:min-h-screen" id="skills">
 		<div class="text-center mb-16">
 			<h3 class="text-4xl text-text mb-4 font-semibold">Technical Skills</h3>
 			<div class="w-10 h-0.5 bg-primary mx-auto"></div>
 		</div>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-			<div class="bg-card-background p-6 rounded-lg border border-border-color">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<div class="bg-card-background p-6 rounded-lg border border-border-color min-w-72">
 				<h4 class="text-text mb-4 text-xl font-semibold">Frontend</h4>
 				<ul class="list-disc pl-4">
 					<li class="mb-2 text-text text-base">TypeScript, JavaScript</li>
@@ -73,7 +72,7 @@ import '../styles/index.css'
 					<li class="mb-2 text-text text-base">GraphQL, REST API</li>
 				</ul>
 			</div>
-			<div class="bg-card-background p-6 rounded-lg border border-border-color">
+			<div class="bg-card-background p-6 rounded-lg border border-border-color min-w-72">
 				<h4 class="text-text mb-4 text-xl font-semibold">Backend</h4>
 				<ul class="list-disc pl-4">
 					<li class="mb-2 text-text text-base">Node JS</li>
@@ -83,7 +82,7 @@ import '../styles/index.css'
 					<li class="mb-2 text-text text-base">REST API</li>
 				</ul>
 			</div>
-			<div class="bg-card-background p-6 rounded-lg border border-border-color">
+			<div class="bg-card-background p-6 rounded-lg border border-border-color min-w-72">
 				<h4 class="text-text mb-4 text-xl font-semibold">Infrastructure</h4>
 				<ul class="list-disc pl-4">
 					<li class="mb-2 text-text text-base">AWS</li>
@@ -94,16 +93,16 @@ import '../styles/index.css'
 		</div>
 	</section>
 
-	<section class="min-h-screen flex flex-col justify-center py-32" id="portfolio">
+	<section class="min-h-screen flex flex-col justify-center py-32 md:min-h-screen" id="portfolio">
 		<div class="text-center mb-16">
 			<h3 class="text-4xl text-text mb-4 font-semibold">Portfolio Projects</h3>
 			<div class="w-10 h-0.5 bg-primary mx-auto"></div>
 		</div>
 		
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-			<div class="bg-blue-50 rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="flex flex-col gap-6">
-					<div class="mb-4">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">Cabinet Health</h4>
 						<p class="text-light-text text-sm mb-2">E-commerce, Blog, Marketing, Dashboard</p>
 						<div class="flex gap-4 items-center flex-wrap">
@@ -111,226 +110,264 @@ import '../styles/index.css'
 							<a href="https://cabinethealth.com" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
 						</div>
 					</div>
-					<div class="flex gap-6 my-4 py-4 border-t border-b border-border-color">
+					<div class="flex gap-4 my-2 py-2 border-t border-b border-border-color">
 						<div class="flex flex-col items-center">
 							<span class="text-xl font-semibold text-primary">100K+</span>
 							<span class="text-xs text-light-text text-center">Monthly Users</span>
 						</div>
 					</div>
-					<div class="mt-4">
+					<div class="mt-2">
 						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
 						<ul class="list-disc pl-4">
-							<li class="mb-2">Built e-commerce storefront on top of Shipify.</li>
-							<li class="mb-2">Implemented prescription medication ordering system which included transfer and refill experiences.</li>
-							<li class="mb-2">Built a blogs section in the website that was fed blogs from a CMS.</li>
-							<li class="mb-2">Built a system for marketing/landing pages where new pages could be created using the CMS.</li>
-							<li class="mb-2">Migrated the frontend infrastructure from Terraform to SST (Serverless Stack) on AWS.</li>
-							<li class="mb-2">Monitored and improved site performace on a regular basis.</li>
+							<li class="mb-1">Built e-commerce storefront on top of Shopify.</li>
+							<li class="mb-1">Implemented prescription medication ordering system which included transfer and refill experiences.</li>
+							<li class="mb-1">Built a blogs section in the website that was fed blogs from a CMS.</li>
+							<li class="mb-1">Built a system for marketing/landing pages where new pages could be created using the CMS.</li>
+							<li class="mb-1">Migrated the frontend infrastructure from Terraform to SST (Serverless Stack) on AWS.</li>
+							<li class="mb-1">Monitored and improved site performace on a regular basis.</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="flex flex-col gap-6">
-					<div class="mb-4">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">DiGii Social - Classroom</h4>
 						<p class="text-light-text text-sm mb-2">Social Media Platform</p>
 						<div class="flex gap-4 items-center flex-wrap">
 							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">React, WebSocket, Node JS, Canvas</span>
+							<a href="https://class.digiisocial.com" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
 						</div>
 					</div>
-					<div class="flex gap-6 my-4 py-4 border-t border-b border-border-color">
+					<div class="flex gap-4 my-2 py-2 border-t border-b border-border-color">
 						<div class="flex flex-col items-center">
 							<span class="text-xl font-semibold text-primary">50K+</span>
 							<span class="text-xs text-light-text text-center">Active Users</span>
 						</div>
 					</div>
-					<div class="mt-4">
+					<div class="mt-2">
 						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
 						<ul class="list-disc pl-4">
-							<li class="mb-2">Created a social media feed.</li>
-							<li class="mb-2">Implemented simple multiplayer games and chat using WebSockets.</li>
-							<li class="mb-2">Created standalone feature packages to improve maintainability and reusability.</li>
-							<li class="mb-2">Developed reusable components including video players, tables, forms and modals</li>
-							<li class="mb-2">Developed three different web apps for different users. (Different users had different portals)</li>
+							<li class="mb-1">Created a social media feed.</li>
+							<li class="mb-1">Implemented simple multiplayer games and chat using WebSockets.</li>
+							<li class="mb-1">Created standalone feature packages to improve maintainability and reusability.</li>
+							<li class="mb-1">Developed reusable components including video players, tables, forms and modals</li>
+							<li class="mb-1">Developed three different web apps for different users. (Different users had different portals)</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="flex flex-col gap-6">
-					<div class="mb-4">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">DiGii Social - Teacher Portal</h4>
 						<p class="text-light-text text-sm mb-2">Social Media Platform</p>
 						<div class="flex gap-4 items-center flex-wrap">
 							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">React, WebSocket, Node JS, Canvas</span>
+							<a href="https://school.digiisocial.com" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
 						</div>
 					</div>
-					<div class="flex gap-6 my-4 py-4 border-t border-b border-border-color">
+					<div class="flex gap-4 my-2 py-2 border-t border-b border-border-color">
 						<div class="flex flex-col items-center">
 							<span class="text-xl font-semibold text-primary">50K+</span>
 							<span class="text-xs text-light-text text-center">Active Users</span>
 						</div>
 					</div>
-					<div class="mt-4">
+					<div class="mt-2">
 						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
 						<ul class="list-disc pl-4">
-							<li class="mb-2">Created a social media feed.</li>
-							<li class="mb-2">Implemented simple multiplayer games and chat using WebSockets.</li>
-							<li class="mb-2">Created standalone feature packages to improve maintainability and reusability.</li>
+							<li class="mb-1">Created a social media feed.</li>
+							<li class="mb-1">Implemented simple multiplayer games and chat using WebSockets.</li>
+							<li class="mb-1">Created standalone feature packages to improve maintainability and reusability.</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="flex flex-col gap-6">
-					<div class="mb-4">
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
 						<h4 class="text-xl text-text mb-0 font-semibold">DiGii Social - Parent Portal</h4>
 						<p class="text-light-text text-sm mb-2">Dashboard</p>
 						<div class="flex gap-4 items-center flex-wrap">
 							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">React, Node JS</span>
 						</div>
 					</div>
-					<div class="flex gap-6 my-4 py-4 border-t border-b border-border-color">
+					<div class="flex gap-4 my-2 py-2 border-t border-b border-border-color">
 						<div class="flex flex-col items-center">
 							<span class="text-xl font-semibold text-primary">50K+</span>
 							<span class="text-xs text-light-text text-center">Active Users</span>
 						</div>
 					</div>
-					<div class="mt-4">
+					<div class="mt-2">
 						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
 						<ul class="list-disc pl-4">
-							<li class="mb-2">Created a informative web application for parents to learn about social media and its effects on children.</li>
-							<li class="mb-2">Created standalone feature packages to improve maintainability and reusability.</li>
-							<li class="mb-2">Developed reusable components including video players, tables, forms and modals</li>
+							<li class="mb-1">Created a informative web application for parents to learn about social media and its effects on children.</li>
+							<li class="mb-1">Created standalone feature packages to improve maintainability and reusability.</li>
+							<li class="mb-1">Developed reusable components including video players, tables, forms and modals</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="mb-4">
-					<h4 class="text-xl text-text mb-0 font-semibold">Somersault</h4>
-					<p class="text-light-text text-sm mb-2">Website</p>
-					<div class="flex gap-4 items-center flex-wrap">
-						<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HMTL, CSS</span>
-						<a href="https://www.somersault.one/" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
+						<h4 class="text-xl text-text mb-0 font-semibold">Somersault</h4>
+						<p class="text-light-text text-sm mb-2">Website</p>
+						<div class="flex gap-4 items-center flex-wrap">
+							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HMTL, CSS</span>
+							<a href="https://www.somersault.one/" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
+						</div>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
+						<ul class="list-disc pl-4">
+							<li class="mb-1">Built responsive multipage website with custom podcast player.</li>
+							<li class="mb-1">Implemented pixel-perfect design from provided mockups</li>
+						</ul>
 					</div>
 				</div>
-				<ul class="list-disc pl-4">
-					<li class="mb-2">Built responsive multipage website with custom podcast player.</li>
-					<li class="mb-2">Implemented pixel-perfect design from provided mockups</li>
-				</ul>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="mb-4">
-					<h4 class="text-xl text-text mb-0 font-semibold">Bremer Advokater</h4>
-					<p class="text-light-text text-sm mb-2">Website</p>
-					<div class="flex gap-4 items-center flex-wrap">
-						<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, CSS</span>
-						<a href="https://bremeradvokater.dk/" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
+						<h4 class="text-xl text-text mb-0 font-semibold">Bremer Advokater</h4>
+						<p class="text-light-text text-sm mb-2">Website</p>
+						<div class="flex gap-4 items-center flex-wrap">
+							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, CSS</span>
+							<a href="https://bremeradvokater.dk/" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
+						</div>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
+						<ul class="list-disc pl-4">
+							<li class="mb-1">Developed fully responsive multi page website.</li>
+							<li class="mb-1">Implemented pixel perfect website from provided mockups.</li>
+						</ul>
 					</div>
 				</div>
-				<ul class="list-disc pl-4">
-					<li class="mb-2">Developed fully responsive multi page website.</li>
-					<li class="mb-2">Implemented pixel perfect website from provided mockups.</li>
-				</ul>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="mb-4">
-					<h4 class="text-xl text-text mb-0 font-semibold">Kimbu Tech</h4>
-					<p class="text-light-text text-sm mb-2">Website</p>
-					<div class="flex gap-4 items-center flex-wrap">
-						<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">React, CSS, Node JS</span>
-						<a href="https://kimubtech.com/" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
+						<h4 class="text-xl text-text mb-0 font-semibold">Kimbu Tech</h4>
+						<p class="text-light-text text-sm mb-2">Website</p>
+						<div class="flex gap-4 items-center flex-wrap">
+							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">React, CSS, Node JS</span>
+							<a href="https://kimubtech.com/" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
+						</div>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
+						<ul class="list-disc pl-4">
+							<li class="mb-1">Developed fully responsive website.</li>
+							<li class="mb-1">Created mockups in Figma.</li>
+							<li class="mb-1">Hosted website in Digital Ocean.</li>
+						</ul>
 					</div>
 				</div>
-				<ul class="list-disc pl-4">
-					<li class="mb-2">Developed fully responsive website.</li>
-					<li class="mb-2">Created mockups in Figma.</li>
-					<li class="mb-2">Hosted website in Digital Ocean.</li>
-				</ul>
 			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="mb-4">
-					<h4 class="text-xl text-text mb-0 font-semibold">Ipay Remit</h4>
-					<p class="text-light-text text-sm mb-2">Website</p>
-					<div class="flex gap-4 items-center flex-wrap">
-						<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, jQuery, CSS, Sass</span>
-						<a href="https://web.archive.org/web/20180528101311/http://www.ipayremittal.com/ipay/" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
+						<h4 class="text-xl text-text mb-0 font-semibold">Skyline Architects</h4>
+						<p class="text-light-text text-sm mb-2">Website</p>
+						<div class="flex gap-4 items-center flex-wrap">
+							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, React, CSS</span>
+							<a href="https://web.archive.org/web/20181225085753/https://skylinearchitects.com.np/" class="text-primary no-underline font-medium" target="_blank">Archive Site</a>
+						</div>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
+						<ul class="list-disc pl-4">
+							<li class="mb-1">Developed fully responsive website as a single page application.</li>
+							<li class="mb-1">Worked with the client to come up with design ideas for the website.</li>
+							<li class="mb-1">Developed a custom CMS for the client to manage the content of the website.</li>
+						</ul>
 					</div>
 				</div>
-				<ul class="list-disc pl-4">
-					<li class="mb-2">Developed fully responsive website as a single page application.</li>
-					<li class="mb-2">Worked with the client to come up with design ideas for the website.</li>
-					<li class="mb-2">Developed a interactive map for users to locate outlets in their area.</li>
-				</ul>
+			</div>
+
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
+						<h4 class="text-xl text-text mb-0 font-semibold">Forex Japan</h4>
+						<p class="text-light-text text-sm mb-2">Website</p>
+						<div class="flex gap-4 items-center flex-wrap">
+							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, jQuery, PHP</span>
+							<a href="https://web.archive.org/web/20180904010809/http://www.forexjapan.co.jp/forexjapan/" class="text-primary no-underline font-medium" target="_blank">Archive Site</a>
+						</div>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
+						<ul class="list-disc pl-4">
+							<li class="mb-1">Developed fully responsive multi page website.</li>
+							<li class="mb-1">Worked with the internationalc client to come up with design ideas for the website.</li>
+							<li class="mb-1">Constantly collaborated with client for improvement and new features.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
+						<h4 class="text-xl text-text mb-0 font-semibold">Ipay Remit</h4>
+						<p class="text-light-text text-sm mb-2">Website</p>
+						<div class="flex gap-4 items-center flex-wrap">
+							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, jQuery, CSS, Sass</span>
+							<a href="https://web.archive.org/web/20180528101311/http://www.ipayremittal.com/ipay/" class="text-primary no-underline font-medium" target="_blank">Live Site</a>
+						</div>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
+						<ul class="list-disc pl-4">
+							<li class="mb-1">Developed fully responsive website as a single page application.</li>
+							<li class="mb-1">Worked with the client to come up with design ideas for the website.</li>
+							<li class="mb-1">Developed a interactive map for users to locate outlets in their area.</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="mb-4">
-					<h4 class="text-xl text-text mb-0 font-semibold">Skyline Architects</h4>
-					<p class="text-light-text text-sm mb-2">Website</p>
-					<div class="flex gap-4 items-center flex-wrap">
-						<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, React, CSS</span>
-						<a href="https://web.archive.org/web/20190329164106/http://skylinearchitects.com.np/" class="text-primary no-underline font-medium" target="_blank">Archive Site</a>
-					</div>
-				</div>
-				<ul class="list-disc pl-4">
-					<li class="mb-2">Developed fully responsive website as a single page application.</li>
-					<li class="mb-2">Worked with the client to come up with design ideas for the website.</li>
-					<li class="mb-2">Developed a custom CMS for the client to manage the content of the website.</li>
-				</ul>
-			</div>
 
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="mb-4">
-					<h4 class="text-xl text-text mb-0 font-semibold">Forex Japan</h4>
-					<p class="text-light-text text-sm mb-2">Website</p>
-					<div class="flex gap-4 items-center flex-wrap">
-						<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, jQuery, PHP</span>
-						<a href="https://web.archive.org/web/20180904010809/https://www.forexjapan.co.jp/forexjapan/" class="text-primary no-underline font-medium" target="_blank">Archive Site</a>
+			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-6">
+				<div class="flex flex-col gap-4">
+					<div class="mb-2">
+						<h4 class="text-xl text-text mb-0 font-semibold">IVF Nepal</h4>
+						<p class="text-light-text text-sm mb-2">Website</p>
+						<div class="flex gap-4 items-center flex-wrap">
+							<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, jQuery, PHP</span>
+						</div>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-text mb-2 text-base font-semibold">Key Contributions</h5>
+						<ul class="list-disc pl-4">
+							<li class="mb-1">Developed fully responsive multi page website.</li>
+							<li class="mb-1">Worked with the client to come up with design ideas for the website.</li>
+						</ul>
 					</div>
 				</div>
-				<ul class="list-disc pl-4">
-					<li class="mb-2">Developed fully responsive multi page website.</li>
-					<li class="mb-2">Worked with the internationalc client to come up with design ideas for the website.</li>
-					<li class="mb-2">Constantly collaborated with client for improvement and new features.</li>
-				</ul>
-			</div>
-
-			<div class="bg-card-background rounded-lg overflow-hidden border border-border-color p-8">
-				<div class="mb-4">
-					<h4 class="text-xl text-text mb-0 font-semibold">IVF Nepal</h4>
-					<p class="text-light-text text-sm mb-2">Website</p>
-					<div class="flex gap-4 items-center flex-wrap">
-						<span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML, jQuery, PHP</span>
-					</div>
-				</div>
-				<ul class="list-disc pl-4">
-					<li class="mb-2">Developed fully responsive multi page website.</li>
-					<li class="mb-2">Worked with the client to come up with design ideas for the website.</li>
-				</ul>
 			</div>
 		</div>
 	</section>
 
-	<section class="min-h-screen flex flex-col justify-center py-32" id="experience">
+	<section class="min-h-screen flex flex-col justify-center py-32 md:min-h-screen" id="experience">
 		<div class="text-center mb-16">
 			<h3 class="text-4xl text-text mb-4 font-semibold">Professional Experience</h3>
 			<div class="w-10 h-0.5 bg-primary mx-auto"></div>
 		</div>
-
-		<div class="relative pl-8 max-w-4xl mx-auto">
-			<div class="absolute left-0 top-0 bottom-0 w-0.5 bg-border-color"></div>
-			<div class="relative mb-12 pl-8">
-				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10"></div>
+		<div class="relative md:pl-8 max-w-4xl mx-auto">
+			<div class="absolute left-0 top-0 bottom-0 w-0.5 bg-border-color hidden md:block"></div>
+			<div class="relative mb-12 md:pl-8 last:mb-0">
+				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
+				<div class="md:hidden text-md mb-1 text-gray-500">1/6</div>
 				<div class="mb-6">
 					<h4 class="text-xl text-text mb-2 font-semibold">Senior Frontend Engineer (Toptal Freelancer)</h4>
 					<div class="flex gap-4 flex-wrap text-light-text text-sm">
@@ -345,7 +382,6 @@ import '../styles/index.css'
 
 						<a href="https://www.toptal.com/resume/sujan-basnet" target="_blank" class="text-primary block my-4">Here's my profile in Toptal</a>
 
-						<h5 class="text-text mb-3 text-base font-semibold"></h5>
 						<ul class="list-disc pl-4">
 							<li class="mb-2">Joined Toptal in 2020.</li>
 							<li class="mb-2">Actively engaged with client immidately after joining.</li>
@@ -354,8 +390,9 @@ import '../styles/index.css'
 				</div>
 			</div>
 		
-			<div class="relative mb-12 pl-8">
-				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10"></div>
+			<div class="relative mb-12 md:pl-8 last:mb-0">
+				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
+				<div class="md:hidden text-md mb-1 text-gray-500">2/6</div>
 				<div class="mb-6">
 					<h4 class="text-xl text-text mb-2 font-semibold">Senior Frontend Engineer</h4>
 					<div class="flex gap-4 flex-wrap text-light-text text-sm">
@@ -366,7 +403,6 @@ import '../styles/index.css'
 				</div>
 				<div class="mb-6">
 					<div class="pb-4">
-						<h5 class="text-text mb-3 text-base font-semibold">Key Achievements</h5>
 						<ul class="list-disc pl-4">
 							<li class="mb-2">Built a new version of the entire website including home page, landing pages, blogs, product pages, collections, and account portal</li>
 							<li class="mb-2">Created prescriptions system with transfer and refill experiences, implementing multi-step forms and account portal integration</li>
@@ -379,8 +415,9 @@ import '../styles/index.css'
 				</div>
 			</div>
 
-			<div class="relative mb-12 pl-8">
-				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10"></div>
+			<div class="relative mb-12 md:pl-8 last:mb-0">
+				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
+				<div class="md:hidden text-md mb-1 text-gray-500">3/6</div>
 				<div class="mb-6">
 					<h4 class="text-xl text-text mb-2 font-semibold">Fullstack Developer</h4>
 					<div class="flex gap-4 flex-wrap text-light-text text-sm">
@@ -391,7 +428,6 @@ import '../styles/index.css'
 				</div>
 				<div class="mb-6">
 					<div class="pb-4">
-						<h5 class="text-text mb-3 text-base font-semibold">Key Achievements</h5>
 						<ul class="list-disc pl-4">
 							<li class="mb-2">Developed feature-rich chat application with group functionality, customization options, and media integration</li>
 							<li class="mb-2">Built real-time multiplayer games as standalone React packages</li>
@@ -403,8 +439,9 @@ import '../styles/index.css'
 				</div>
 			</div>
 
-			<div class="relative mb-12 pl-8">
-				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10"></div>
+			<div class="relative mb-12 md:pl-8 last:mb-0">
+				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
+				<div class="md:hidden text-md mb-1 text-gray-500">4/6</div>
 				<div class="mb-6">
 					<h4 class="text-xl text-text mb-2 font-semibold">Fullstack Developer</h4>
 					<div class="flex gap-4 flex-wrap text-light-text text-sm">
@@ -421,8 +458,9 @@ import '../styles/index.css'
 				</ul>
 			</div>
 
-			<div class="relative mb-12 pl-8">
-				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10"></div>
+			<div class="relative mb-12 md:pl-8 last:mb-0">
+				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
+				<div class="md:hidden text-md mb-1 text-gray-500">5/6</div>
 				<div class="mb-6">
 					<h4 class="text-xl text-text mb-2 font-semibold">Fullstack Developer</h4>
 					<div class="flex gap-4 flex-wrap text-light-text text-sm">
@@ -438,8 +476,9 @@ import '../styles/index.css'
 				</ul>
 			</div>
 
-			<div class="relative mb-12 pl-8">
-				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10"></div>
+			<div class="relative mb-12 md:pl-8 last:mb-0">
+				<div class="absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full z-10 hidden md:block"></div>
+				<div class="md:hidden text-md mb-1 text-gray-500">6/6</div>
 				<div class="mb-6">
 					<h4 class="text-xl text-text mb-2 font-semibold">Fullstack Developer</h4>
 					<div class="flex gap-4 flex-wrap text-light-text text-sm">
@@ -457,7 +496,7 @@ import '../styles/index.css'
 		</div>
 	</section>
 
-	<section class="min-h-screen flex flex-col justify-center py-32" id="strengths">
+	<section class="min-h-screen flex flex-col justify-center py-32 md:min-h-screen" id="strengths">
 		<div class="text-center mb-16">
 			<h3 class="text-4xl text-text mb-4 font-semibold">Key Strengths</h3>
 			<div class="w-10 h-0.5 bg-primary mx-auto"></div>
@@ -476,14 +515,14 @@ import '../styles/index.css'
 		</div>
 	</section>
 
-	<section class="min-h-screen flex flex-col justify-center py-32" id="contact">
+	<section class="min-h-screen flex flex-col justify-center py-32 md:min-h-screen" id="contact">
 		<div class="text-center mb-16">
 			<h3 class="text-4xl text-text mb-4 font-semibold">Get In Touch</h3>
 			<div class="w-10 h-0.5 bg-primary mx-auto"></div>
 		</div>
 		<div class="text-center max-w-2xl mx-auto">
 			<p class="mb-8 text-light-text">I'm always open to discussing new projects, creative ideas or opportunities.</p>
-			<div class="flex gap-6 justify-center flex-wrap">
+			<div class="flex gap-4 md:gap-6 justify-center flex-wrap">
 				<a href="https://github.com/sujanbasnet" target="_blank" class="flex items-center gap-2 px-6 py-3 rounded-lg bg-card-background text-text no-underline border border-border-color hover:bg-primary hover:text-white transition-colors duration-200">
 					<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
 						<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
