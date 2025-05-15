@@ -8,14 +8,22 @@ import '../styles/global.css'
 		<meta charset="UTF-8" />
 		<meta name="description" content="Sujan Basnet - Full Stack Developer" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" id="favicon" href="/favicon-light.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<script>
+      const favicon = document.getElementById('favicon');
 			// Check for saved theme preference or use system preference
 			if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
 				document.documentElement.classList.add('dark')
+        if(favicon) {
+          favicon.setAttribute("href", "/favicon-dark.svg")
+        }
+
 			} else {
 				document.documentElement.classList.remove('dark')
+        if(favicon) {
+          favicon.setAttribute("href", "/favicon-light.svg")
+        }
 			}
 
 			// Listen for system theme changes
@@ -78,14 +86,25 @@ import '../styles/global.css'
 		<script>
 			// Theme toggle functionality
 			const themeToggle = document.getElementById('theme-toggle')
+      const favicon = document.getElementById("favicon");
+
 			if (themeToggle) {
 				themeToggle.addEventListener('click', () => {
+
 					if (document.documentElement.classList.contains('dark')) {
 						document.documentElement.classList.remove('dark')
 						localStorage.theme = 'light'
+
+            if(favicon) {
+              favicon.setAttribute("href", "/favicon-light.svg")
+            }
 					} else {
 						document.documentElement.classList.add('dark')
 						localStorage.theme = 'dark'
+
+            if(favicon) {
+              favicon.setAttribute("href", "/favicon-dark.svg")
+            }
 					}
 				})
 			}
